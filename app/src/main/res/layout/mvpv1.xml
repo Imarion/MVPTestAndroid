@@ -2,20 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <fragment
-        class="com.emr.mvptestandroid.mvp1.view1"
-        android:id="@+id/view1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-        <TextView
-            android:text="TextView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="27dp"
-            android:layout_marginTop="17dp"
-            android:id="@+id/tv1" />
+    <TextView
+        android:text="TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="17dp"
+        android:id="@+id/tv1" />
 
 </RelativeLayout>
