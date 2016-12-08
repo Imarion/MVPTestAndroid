@@ -3,6 +3,8 @@ package com.emr.mvptestandroid.mvp1;
 import android.text.Editable;
 import android.text.TextWatcher;
 
+import com.emr.mvptestandroid.mvp2.presenter2;
+
 /**
  * Created by emr on 2016/12/06.
  */
@@ -10,7 +12,9 @@ import android.text.TextWatcher;
 public class presenter1 implements mvp1contract.ProvidedPresenterOperations, TextWatcher {
 
     private static presenter1 pres1;
-    private        model1     modl1 = new model1();
+    private        mvp1contract.ProvidedModelOperations    modl1 = new model1();
+
+    private presenter2 pres2 = presenter2.getInstance();
 
     private mvp1contract.RequiredViewOperations mRvo;
 
@@ -44,6 +48,7 @@ public class presenter1 implements mvp1contract.ProvidedPresenterOperations, Tex
     @Override
     public void afterTextChanged(Editable editable) {
         modl1.saveText(editable.toString());
+        presenter2.getInstance().setText(editable.toString());
     }
 }
 

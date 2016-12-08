@@ -16,4 +16,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />
+
+    <fragment
+        android:id="@+id/fv2"
+        class="com.emr.mvptestandroid.mvp2.view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fv1"/>
+
 </RelativeLayout>
